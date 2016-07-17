@@ -1,0 +1,11 @@
+Be aware that the ability to remove plates is an admin function, and will require an admin password to continue: <br>
+<form> 
+Password <input type="password" name="pwd"> <br>
+<input type="button" value="Continue"
+  onclick="google.script
+                        .run.RemovePlate(this.parentNode)
+                        .host.close()" />
+                        
+<input type="button" value="Cancel"
+  onclick="google.script.host.close()" />
+</form>

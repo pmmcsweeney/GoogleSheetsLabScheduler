@@ -1,0 +1,49 @@
+<script>
+function updateUI() {
+document.body.innerHTML = "Success!"
+
+window.setTimeout("google.script.host.close()", 3000);
+}
+</script>
+
+<form id= "SignupForm" >
+Date:
+<input type="text" name="theDate" value="MM/DD/YYYY"><hr>
+
+User: 
+<input type="text" name="username"><hr>
+
+Number of Markers:
+<input type="text" name="markers"><hr>
+
+Ladder: <br>
+<input type="radio" name="ladder" value="445" checked> 445
+<br>
+<input type="radio" name="ladder" value="680"> 680
+<br>
+<input type="radio" name="ladder" value="1400"> 1400
+<hr>
+
+
+Plate Type: <br> 
+<input type="radio" name="ptype" value="96" checked> 96
+<br>
+<input type="radio" name="ptype" value="384"> 384
+<hr>
+
+Principle Investigator:
+<input type="text" name="principleInvestigator"><hr>
+
+Plate Name:
+<input type="text" name="plateName"><hr>
+
+Email:
+<input type="text" name="email"><hr>
+
+<input type="button" value="Sign Up"
+  onclick="google.script
+                        .run.SignUpJS(this.parentNode)
+                        .host.close()" />
+  
+</form>
+
